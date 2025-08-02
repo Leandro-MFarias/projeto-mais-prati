@@ -1,11 +1,10 @@
-import { Journey } from "@/_components/journey";
 import { NavBar } from "@/_components/navBar";
 
-export function HomePage() {
+export function ProfilePage() {
   return (
     <div className="h-screen flex flex-col-reverse lg:flex-row bg-[#252627] text-zinc-200/90">
       <NavBar />
-      <Journey />
+      Profile Page
     </div>
-  );
+  )
 }
