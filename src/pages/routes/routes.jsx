@@ -8,7 +8,7 @@ import { DailyPage } from "../DailyPage";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />
+    element: <HomePage /> 
   },
   {
     path: "/login",
