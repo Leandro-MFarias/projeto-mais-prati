@@ -3,8 +3,8 @@ import { DumbbellIcon, RocketIcon, UserRoundCog } from "lucide-react";
 import { Link } from "react-router";
 
 export function NavBar() {
-  const { page, changePage } = useNavPage()
-  
+  const { page, changePage } = useNavPage();
+
   const navBar = [
     { name: "Jornada", icon: <RocketIcon />, href: "/" },
     { name: "Desafio diário", icon: <DumbbellIcon />, href: "/daily" },
@@ -25,7 +25,7 @@ export function NavBar() {
                 onClick={() => changePage(index)}
               >
                 {item.icon}
-                <p className="w-full text-center absolute -top-12 sm:-top-8 hidden rounded-sm bg-zinc-700/50 px-2.5 group-hover:block lg:static lg:block lg:bg-transparent lg:px-0">
+                <p className="absolute -top-12 hidden rounded-sm bg-zinc-700/50 px-2.5 text-center group-hover:block sm:-top-8 lg:static lg:block lg:bg-transparent lg:px-0">
                   {item.name}
                 </p>
               </li>
