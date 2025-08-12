@@ -9,7 +9,6 @@ export function NavBar() {
     { name: "Jornada", icon: <RocketIcon />, href: "/" },
     { name: "Desafio diário", icon: <DumbbellIcon />, href: "/daily" },
     { name: "Perfil", icon: <UserRoundCog />, href: "/profile" },
-    { name: "Sair", icon: <DoorOpen />, href: "/login" },
   ];
 
   return (
@@ -20,21 +19,29 @@ export function NavBar() {
       <nav className="flex-1">
         <ul className="flex items-center justify-center space-x-10 px-6 lg:flex-col lg:items-start lg:justify-start lg:space-y-8 lg:space-x-0 lg:px-0 lg:py-0">
           {navBar.map((item, index) => (
-            <>
-              <Link to={item.href} key={index} className="w-full">
-                <li
-                  className={`group relative flex w-full cursor-pointer flex-col-reverse items-center justify-center rounded-md p-3 text-xl transition duration-150 ease-in hover:bg-zinc-700/50 lg:flex-row lg:justify-start lg:space-x-3 ${page === index ? "border-2 border-neutral-600/80 bg-zinc-700/50 font-semibold text-white" : ""}`}
-                  onClick={() => changePage(index)}
-                >
-                  {item.icon}
-                  <p className="absolute -top-12 hidden rounded-sm bg-zinc-700/50 px-2.5 text-center group-hover:block sm:-top-8 lg:static lg:block lg:bg-transparent lg:px-0">
-                    {item.name}
-                  </p>
-                </li>
-              </Link>
-              
-            </>
+            <Link to={item.href} key={index} className="w-full">
+              <li
+                className={`group relative flex w-full cursor-pointer flex-col-reverse items-center justify-center rounded-md p-3 text-xl transition duration-150 ease-in hover:bg-zinc-700/50 lg:flex-row lg:justify-start lg:space-x-3 ${page === index ? "border-2 border-neutral-600/80 bg-zinc-700/50 font-semibold text-white" : ""}`}
+                onClick={() => changePage(index)}
+              >
+                {item.icon}
+                <p className="absolute -top-12 hidden rounded-sm bg-zinc-700/50 px-2.5 text-center group-hover:block sm:-top-8 lg:static lg:block lg:bg-transparent lg:px-0">
+                  {item.name}
+                </p>
+              </li>
+            </Link>
           ))}
+          <Link to={"/login"} className="w-full">
+            <li
+              className={`group relative flex w-full cursor-pointer flex-col-reverse items-center justify-center rounded-md p-3 text-xl transition duration-150 ease-in hover:bg-zinc-700/50 lg:hidden lg:flex-row lg:justify-start lg:space-x-3 ${page === 3 ? "border-2 border-neutral-600/80 bg-zinc-700/50 font-semibold text-white" : ""}`}
+              onClick={() => changePage(3)}
+            >
+              <DoorOpen />
+              <p className="absolute -top-12 hidden rounded-sm bg-zinc-700/50 px-2.5 text-center group-hover:block sm:-top-8 lg:static lg:block lg:bg-transparent lg:px-0">
+                Sair
+              </p>
+            </li>
+          </Link>
         </ul>
       </nav>
 
