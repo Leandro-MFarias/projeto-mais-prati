@@ -4,6 +4,7 @@ import { LoginPage } from "../LoginPage";
 import { RegisterPage } from "../RegisterPage";
 import { ProfilePage } from "../ProfilePage";
 import { DailyPage } from "../DailyPage";
+import { ExercisesPage } from "../ExercisesPage";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/daily",
     element: <DailyPage />
+  },
+  {
+    path: "/exercises",
+    element: <ExercisesPage />
   },
 ])
 

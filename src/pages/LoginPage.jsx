@@ -3,6 +3,7 @@ import { Link } from "react-router";
 export function LoginPage() {
   return (
     <div className="grid h-screen grid-cols-2 bg-zinc-800 text-zinc-300">
+      {/* CONTAINER IMAGE */}
       <div className="relative flex items-center justify-center bg-[url(/code.png)] bg-no-repeat">
         <div className="absolute inset-0 bg-black/70"></div>
 
@@ -11,6 +12,7 @@ export function LoginPage() {
         </h1>
       </div>
 
+      {/* CONTAINER FORM  */}
       <div className="flex w-full flex-col items-center justify-center space-y-4">
         <h1 className="text-3xl font-bold text-purple-600">LOGO AQUI</h1>
         <form className="flex flex-col items-center space-y-6">

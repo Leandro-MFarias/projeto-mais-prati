@@ -6,7 +6,11 @@ export function NavBar() {
   const { page, changePage } = useNavPage();
 
   const navBar = [
-    { name: "Jornada", icon: <RocketIcon />, href: "/" },
+    {
+      name: "Jornada",
+      icon: <img src="/road-icon.png" alt="" className="w-10" />,
+      href: "/",
+    },
     { name: "Desafio diário", icon: <DumbbellIcon />, href: "/daily" },
     { name: "Perfil", icon: <UserRoundCog />, href: "/profile" },
   ];
@@ -21,7 +25,7 @@ export function NavBar() {
           {navBar.map((item, index) => (
             <Link to={item.href} key={index} className="w-full">
               <li
-                className={`group relative flex w-full cursor-pointer flex-col-reverse items-center justify-center rounded-md p-3 text-xl transition duration-150 ease-in hover:bg-zinc-700/50 lg:flex-row lg:justify-start lg:space-x-3 ${page === index ? "border-2 border-neutral-600/80 bg-zinc-700/50 font-semibold text-white" : ""}`}
+                className={`group relative flex w-full cursor-pointer flex-col-reverse items-center justify-center rounded-md p-3 text-xl transition duration-150 ease-in hover:bg-zinc-700/50 lg:flex-row lg:justify-start lg:space-x-6 ${page === index ? "border-2 border-neutral-600/80 bg-zinc-700/50 font-semibold text-white" : ""}`}
                 onClick={() => changePage(index)}
               >
                 {item.icon}
