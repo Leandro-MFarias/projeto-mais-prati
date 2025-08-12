@@ -3,7 +3,7 @@ import { Link } from "react-router";
 export function LoginPage() {
   return (
     <div className="grid h-screen grid-cols-2 bg-zinc-800 text-zinc-300">
-      <div className="relative flex items-center justify-center bg-[url(/code.jpg)] bg-contain bg-no-repeat">
+      <div className="relative flex items-center justify-center bg-[url(/code.png)] bg-no-repeat">
         <div className="absolute inset-0 bg-black/70"></div>
 
         <h1 className="relative text-center text-4xl font-semibold text-white">
@@ -47,8 +47,8 @@ export function LoginPage() {
         </form>
         <Link to={"/register"}>
           <p>
-            Não possui cadastro?{" "}
-            <span className="font-semibold text-purple-500">CADASTRE-SE</span>
+            Não possui cadastro?
+            <span className="font-semibold text-purple-500"> CADASTRE-SE</span>
           </p>
         </Link>
       </div>

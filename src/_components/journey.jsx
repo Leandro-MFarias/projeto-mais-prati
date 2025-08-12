@@ -1,4 +1,5 @@
-import { Bug } from "lucide-react";
+// import { Star } from "lucide-react";
+import { FaStar } from "react-icons/fa6";
 import exercises from "../service/exercises.json";
 
 export function Journey() {
@@ -14,17 +15,21 @@ export function Journey() {
       {/* BLOCKS OF EXERCISE */}
       <div className="space-y-2">
         {exercises.map((exerciseGroup) => (
-          <div key={exerciseGroup[0].id} className="flex flex-col items-center space-y-3">
+          <div
+            key={exerciseGroup[0].id}
+            className="flex flex-col items-center space-y-3"
+          >
             <div>
               <button
-                className={`btn-exercise flex h-24 w-24 cursor-pointer items-center justify-center rounded-full ${exerciseGroup[0].completed === true ? "bg-lime-500" : "bg-zinc-600"}`}
+                className={`btn-exercise relative flex h-24 w-24 cursor-pointer items-center justify-center rounded-full ${exerciseGroup[0].completed === true ? "bg-lime-500" : "bg-zinc-600"}`}
               >
-                <Bug size={30} className="text-white" />
+                <FaStar className="text-2xl" />
+                {/* <div className="absolute bottom-0 h-10 w-10 bg-zinc-100" /> */}
               </button>
             </div>
-            <div className="h-4 w-2 bg-zinc-500 rounded-full" />
-            <div className="h-4 w-2 bg-zinc-500 rounded-full" />
-            <div className="h-4 w-2 bg-zinc-500 rounded-full" />
+            <div className="h-4 w-2 rounded-full bg-zinc-500" />
+            <div className="h-4 w-2 rounded-full bg-zinc-500" />
+            <div className="h-4 w-2 rounded-full bg-zinc-500" />
           </div>
         ))}
       </div>
