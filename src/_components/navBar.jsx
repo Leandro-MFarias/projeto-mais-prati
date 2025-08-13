@@ -2,17 +2,29 @@ import { useNavPage } from "@/store/navPages";
 import { DoorOpen, DumbbellIcon, RocketIcon, UserRoundCog } from "lucide-react";
 import { Link } from "react-router";
 
+import journey from "../assets/journey.png";
+import daily from "../assets/hourglass.png";
+import bag from "../assets/bag-2.png";
+
 export function NavBar() {
   const { page, changePage } = useNavPage();
 
   const navBar = [
     {
       name: "Jornada",
-      icon: <img src="/road-icon.png" alt="" className="w-10" />,
+      icon: <img src={journey} alt="" className="w-10" />,
       href: "/",
     },
-    { name: "Desafio diário", icon: <DumbbellIcon />, href: "/daily" },
-    { name: "Perfil", icon: <UserRoundCog />, href: "/profile" },
+    {
+      name: "Desafio diário",
+      icon: <img src={daily} alt="" className="w-10" />,
+      href: "/daily",
+    },
+    {
+      name: "Perfil",
+      icon: <img src={bag} alt="" className="w-12" />,
+      href: "/profile",
+    },
   ];
 
   return (
