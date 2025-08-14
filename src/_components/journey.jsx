@@ -21,7 +21,7 @@ export function Journey() {
           >
             <div>
               <button
-                className={`btn-exercise relative flex h-24 w-24 cursor-pointer items-center justify-center rounded-full ${exerciseGroup[0].completed === true ? "bg-lime-500" : "bg-zinc-600"}`}
+                className={`btn-exercise relative flex h-24 w-24 cursor-pointer items-center justify-center rounded-full ${exerciseGroup[0].completed === true ? "bg-purple-700" : "bg-zinc-600"}`}
               >
                 <FaStar className="text-2xl" />
                 {/* <div className="absolute bottom-0 h-10 w-10 bg-zinc-100" /> */}

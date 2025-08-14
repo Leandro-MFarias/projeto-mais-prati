@@ -120,6 +120,8 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Varela Round', sans-serif;
+    color: #e4e4e7E6;
+    background-color: #252627;
   }
 }
 

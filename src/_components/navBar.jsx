@@ -1,10 +1,11 @@
 import { useNavPage } from "@/store/navPages";
-import { DoorOpen, DumbbellIcon, RocketIcon, UserRoundCog } from "lucide-react";
+import { DoorOpen } from "lucide-react";
 import { Link } from "react-router";
 
 import journey from "../assets/journey.png";
 import daily from "../assets/hourglass.png";
 import bag from "../assets/bag-2.png";
+import door from "../assets/door.png";
 
 export function NavBar() {
   const { page, changePage } = useNavPage();
@@ -50,9 +51,8 @@ export function NavBar() {
           <Link to={"/login"} className="w-full">
             <li
               className={`group relative flex w-full cursor-pointer flex-col-reverse items-center justify-center rounded-md p-3 text-xl transition duration-150 ease-in hover:bg-zinc-700/50 lg:hidden lg:flex-row lg:justify-start lg:space-x-3 ${page === 3 ? "border-2 border-neutral-600/80 bg-zinc-700/50 font-semibold text-white" : ""}`}
-              onClick={() => changePage(3)}
             >
-              <DoorOpen />
+              <img src={door} alt="" className="w-10" />
               <p className="absolute -top-12 hidden rounded-sm bg-zinc-700/50 px-2.5 text-center group-hover:block sm:-top-8 lg:static lg:block lg:bg-transparent lg:px-0">
                 Sair
               </p>
@@ -65,8 +65,8 @@ export function NavBar() {
         <div className="h-[1px] w-full bg-neutral-600" />
         <Link to={"/login"}>
           <button className="flex cursor-pointer items-center space-x-2 px-3 text-zinc-400 transition duration-200 ease-in-out hover:scale-105 hover:text-zinc-200">
-            <DoorOpen className="" size={28} />
-            <p className="text-lg font-semibold">Sair</p>
+            <img src={door} alt="" className="w-10" />
+            <p className="text-lg font-bold text-amber-700">Sair</p>
           </button>
         </Link>
       </div>
