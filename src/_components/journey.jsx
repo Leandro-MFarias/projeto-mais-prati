@@ -24,10 +24,12 @@ export function Journey() {
           >
             <div className="relative">
               <button
-                className={`relative flex h-24 w-24 cursor-pointer items-center justify-center rounded-full ${exerciseGroup[0].completed === true ? "btn-todo bg-purple-600" : "btn-block bg-zinc-600"}`}
+                className={`btn relative flex h-24 w-24 cursor-pointer items-center justify-center rounded-[50%] ${exerciseGroup[0].completed === true ? "completed bg-lime-500" : "blocked bg-zinc-600"}`}
               >
-                <FaStar className="text-2xl" />
+                <FaStar className="text-4xl" />
               </button>
+
+              {/* START */}
               <div className="absolute">
                 <div className="relative inline-block translate-x-2 -translate-y-32 animate-bounce rounded border border-neutral-600/80 bg-[#252627] px-3 py-1 font-bold text-purple-500">
                   START
