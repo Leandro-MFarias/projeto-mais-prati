@@ -1,5 +1,4 @@
 import { useNavPage } from "@/store/navPages";
-import { DoorOpen } from "lucide-react";
 import { Link } from "react-router";
 
 import journey from "../assets/journey.png";
