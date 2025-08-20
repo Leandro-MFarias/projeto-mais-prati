@@ -1,11 +1,9 @@
-// import { Star } from "lucide-react";
 import { FaStar } from "react-icons/fa6";
 import exercises from "../service/exercises.json";
-import { MessageCircle, MessageSquare, MessageSquareText } from "lucide-react";
 
 export function Journey() {
   return (
-    <div className="flex flex-1 flex-col items-center space-y-20 py-10">
+    <div className="overflow-y-auto flex flex-1 flex-col items-center space-y-20 py-10">
       {/* HEADER OF SECTION */}
       <div className="flex w-full items-center space-x-4 px-16">
         <div className="h-[1px] w-full bg-neutral-600" />

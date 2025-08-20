@@ -1,9 +1,9 @@
-import { Journey } from "@/_components/journey";
-import { NavBar } from "@/_components/navBar";
+import { Journey } from "@/components/journey";
+import { NavBar } from "@/components/navBar";
 
 export function HomePage() {
   return (
-    <div className="h-screen flex flex-col-reverse lg:flex-row">
+    <div className="flex h-screen flex-col-reverse lg:flex-row">
       <NavBar />
       <Journey />
     </div>

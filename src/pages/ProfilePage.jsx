@@ -1,10 +1,11 @@
-import { NavBar } from "@/_components/navBar";
+import { NavBar } from "@/components/navBar";
+import { Profile } from "@/components/profile";
 
 export function ProfilePage() {
   return (
-    <div className="h-screen flex flex-col-reverse lg:flex-row">
+    <div className="flex h-screen flex-col-reverse lg:flex-row">
       <NavBar />
-      Profile Page
+      <Profile />
     </div>
-  )
+  );
 }
