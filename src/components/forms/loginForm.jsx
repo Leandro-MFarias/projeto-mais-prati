@@ -1,5 +1,5 @@
 import { zodResolver } from "@hookform/resolvers/zod";
-import { loginSchema } from "../../schemas/login-schema"
+import { loginSchema } from "../../schemas/login-schema";
 import { useForm } from "react-hook-form";
 
 export function LoginForm() {
@@ -8,7 +8,7 @@ export function LoginForm() {
     handleSubmit,
     formState: { errors, isLoading },
   } = useForm({
-    resolver: zodResolver(loginSchema)
+    resolver: zodResolver(loginSchema),
   });
 
   function handleForm(data) {
@@ -26,7 +26,7 @@ export function LoginForm() {
         </label>
         <input
           type="email"
-          className="rounded-md border-2 border-neutral-900 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
+          className="rounded-md border-2 border-neutral-700/80 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("email")}
         />
         <p className="h-5 font-bold text-red-500/80">{errors.email?.message}</p>
@@ -38,7 +38,7 @@ export function LoginForm() {
         </label>
         <input
           type="password"
-          className="rounded-md border-2 border-neutral-900 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
+          className="rounded-md border-2 border-neutral-700/80 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("password")}
         />
         <p className="h-5 font-bold text-red-500/80">

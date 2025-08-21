@@ -26,7 +26,7 @@ export function RegisterForm() {
         </label>
         <input
           type="text"
-          className="rounded-md border-2 border-neutral-900 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
+          className="rounded-md border-2 border-neutral-700/80 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("fullname")}
         />
         <p className="h-5 font-bold text-red-500/80">{errors.fullname?.message}</p>
@@ -38,7 +38,7 @@ export function RegisterForm() {
         </label>
         <input
           type="email"
-          className="rounded-md border-2 border-neutral-900 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
+          className="rounded-md border-2 border-neutral-600/60 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("email")}
         />
         <p className="h-5 font-bold text-red-500/80">{errors.email?.message}</p>
@@ -50,7 +50,7 @@ export function RegisterForm() {
         </label>
         <input
           type="password"
-          className="rounded-md border-2 border-neutral-900 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
+          className="rounded-md border-2 border-neutral-600/60 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("password")}
         />
         <p className="h-5 font-bold text-red-500/80">
@@ -64,7 +64,7 @@ export function RegisterForm() {
         </label>
         <input
           type="password"
-          className="rounded-md border-2 border-neutral-900 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
+          className="rounded-md border-2 border-neutral-600/60 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("confirm")}
         />
         <p className="h-5 font-bold text-red-500/80">
