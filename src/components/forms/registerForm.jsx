@@ -20,7 +20,7 @@ export function RegisterForm() {
       onSubmit={handleSubmit(handleForm)}
       className="flex w-[70%] flex-col items-center space-y-3 xl:w-[55%]"
     >
-      <div className="flex w-full flex-col space-y-2">
+      <div className="flex w-full flex-col">
         <label className="text-sm">
           Nome e Sobrenome
         </label>
@@ -29,10 +29,10 @@ export function RegisterForm() {
           className="rounded-md border-2 border-neutral-700/80 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("fullname")}
         />
-        <p className="h-5 font-bold text-red-500/80">{errors.fullname?.message}</p>
+        <p className="h-4 font-bold text-red-500/80 pl-1">{errors.fullname?.message}</p>
       </div>
 
-      <div className="flex w-full flex-col space-y-2">
+      <div className="flex w-full flex-col">
         <label className="text-sm">
           E-mail
         </label>
@@ -41,10 +41,10 @@ export function RegisterForm() {
           className="rounded-md border-2 border-neutral-600/60 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("email")}
         />
-        <p className="h-5 font-bold text-red-500/80">{errors.email?.message}</p>
+        <p className="h-4 font-bold text-red-500/80 pl-1">{errors.email?.message}</p>
       </div>
 
-      <div className="flex w-full flex-col space-y-2">
+      <div className="flex w-full flex-col">
         <label className="text-sm">
           Senha
         </label>
@@ -53,12 +53,12 @@ export function RegisterForm() {
           className="rounded-md border-2 border-neutral-600/60 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("password")}
         />
-        <p className="h-5 font-bold text-red-500/80">
+        <p className="h-4 font-bold text-red-500/80 pl-1">
           {errors.password?.message}
         </p>
       </div>
 
-      <div className="flex w-full flex-col space-y-2">
+      <div className="flex w-full flex-col">
         <label className="text-sm">
           Confirmar senha
         </label>
@@ -67,12 +67,12 @@ export function RegisterForm() {
           className="rounded-md border-2 border-neutral-600/60 bg-neutral-950 px-4 py-3 outline-none focus:border-purple-600"
           {...register("confirm")}
         />
-        <p className="h-5 font-bold text-red-500/80">
+        <p className="h-4 font-bold text-red-500/80 pl-1">
           {errors.confirm?.message}
         </p>
       </div>
 
-      <div className="flex items-center space-x-2">
+      <div className="flex items-center space-x-2 mt-6">
         <input id="remember" type="checkbox" />
         <label htmlFor="remember" className="text-sm font-semibold">
           lembre-me
