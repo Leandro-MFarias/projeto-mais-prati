@@ -13,22 +13,26 @@ export function Daily() {
     {
       question: "a",
       value: "a",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description:
+        "Permitir a criação de componentes com estado local compartilhado automaticamente.",
     },
     {
       question: "b",
       value: "b",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description:
+        "Criar uma forma de compartilhar dados entre componentes sem a necessidade de props drilling.",
     },
     {
       question: "c",
       value: "c",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description:
+        "Gerar automaticamente um provedor de autenticação global para a aplicação.",
     },
     {
       question: "d",
       value: "d",
-      description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      description:
+        "Facilitar a comunicação assíncrona entre componentes pai e filho",
     },
   ];
 
@@ -53,8 +57,8 @@ export function Daily() {
   return (
     <div className="mx-6 flex flex-1 flex-col items-center space-y-12 pt-28">
       <h2 className="text-center text-xl">
-        <span className="font-bold text-purple-600">PERGUNTA:</span> Lorem
-        ipsum, dolor sit amet consectetur adipisicing elit.
+        <span className="font-bold text-purple-600">PERGUNTA:</span> Qual é a
+        principal finalidade do createContext no React?
       </h2>
 
       <form
