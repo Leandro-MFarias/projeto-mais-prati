@@ -20,7 +20,7 @@ export function RegisterForm() {
       onSubmit={handleSubmit(handleForm)}
       className="flex w-[70%] flex-col items-center space-y-3 xl:w-[55%]"
     >
-      <div className="flex w-full flex-col">
+      <div className="flex w-full flex-col space-y-1">
         <label className="text-sm">
           Nome e Sobrenome
         </label>
@@ -32,7 +32,7 @@ export function RegisterForm() {
         <p className="h-4 font-bold text-red-500/80 pl-1">{errors.fullname?.message}</p>
       </div>
 
-      <div className="flex w-full flex-col">
+      <div className="flex w-full flex-col space-y-1">
         <label className="text-sm">
           E-mail
         </label>
@@ -44,7 +44,7 @@ export function RegisterForm() {
         <p className="h-4 font-bold text-red-500/80 pl-1">{errors.email?.message}</p>
       </div>
 
-      <div className="flex w-full flex-col">
+      <div className="flex w-full flex-col space-y-1">
         <label className="text-sm">
           Senha
         </label>
@@ -58,7 +58,7 @@ export function RegisterForm() {
         </p>
       </div>
 
-      <div className="flex w-full flex-col">
+      <div className="flex w-full flex-col space-y-1">
         <label className="text-sm">
           Confirmar senha
         </label>
@@ -70,13 +70,6 @@ export function RegisterForm() {
         <p className="h-4 font-bold text-red-500/80 pl-1">
           {errors.confirm?.message}
         </p>
-      </div>
-
-      <div className="flex items-center space-x-2 mt-6">
-        <input id="remember" type="checkbox" />
-        <label htmlFor="remember" className="text-sm font-semibold">
-          lembre-me
-        </label>
       </div>
 
       <button

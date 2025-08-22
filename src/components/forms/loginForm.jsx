@@ -21,7 +21,7 @@ export function LoginForm() {
       className="flex w-[70%] flex-col items-center space-y-2 xl:w-[55%]"
     >
       <div className="flex w-full flex-col space-y-2">
-        <label htmlFor="email" className="text-sm font-extralight">
+        <label htmlFor="email" className="text-sm">
           E-mail
         </label>
         <input
@@ -33,7 +33,7 @@ export function LoginForm() {
       </div>
 
       <div className="flex w-full flex-col space-y-2">
-        <label htmlFor="email" className="text-sm font-extralight">
+        <label htmlFor="email" className="text-sm">
           Senha
         </label>
         <input
