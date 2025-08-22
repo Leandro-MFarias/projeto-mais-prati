@@ -74,7 +74,7 @@ export function RegisterForm() {
 
       <button
         type="submit"
-        className="w-[80%] cursor-pointer rounded-xl bg-purple-700 py-3 font-semibold transition duration-150 ease-in hover:bg-purple-600"
+        className="w-[80%] cursor-pointer rounded-xl bg-purple-700 py-3 font-semibold transition duration-150 ease-in hover:bg-purple-600 mt-2"
       >
         {isLoading ? "ENTRANDO.." : "ENTRAR"}
       </button>

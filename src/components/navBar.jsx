@@ -3,8 +3,9 @@ import { Link } from "react-router";
 
 import journey from "../assets/journey.png";
 import daily from "../assets/hourglass.png";
-import bag from "../assets/bag-2.png";
+import bag from "../assets/bag.png";
 import door from "../assets/door.png";
+import hat from "../assets/hat.png";
 
 export function NavBar() {
   const { page, changePage } = useNavPage();
@@ -24,6 +25,11 @@ export function NavBar() {
       name: "Perfil",
       icon: <img src={bag} alt="" className="w-12" />,
       href: "/profile",
+    },
+    {
+      name: "Professor",
+      icon: <img src={hat} alt="" className="w-12" />,
+      href: "/teacher",
     },
   ];
 
